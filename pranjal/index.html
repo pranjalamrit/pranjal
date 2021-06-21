@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranjal Amrit</title>
+    <link rel="icon" href=" Capture.JPG" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+</head>
+
+<body>
+    <section id="main" class="center">
+        <div id="particles-js"></div>
+        <div class="user_info">
+            <h1 class="user_name">Pranjal Amrit .</h1>
+            <p>Front-End Developer</p>
+            <a href="#About" class="btn">About Me</a>
+        </div>
+        <div class="user_img">
+            <img src=" Capture.JPG" alt="" />
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about center" id="About">
+        <div class="center">
+            <h1 class="about_heading">About</h1>
+            <p>
+                Hello! My name is Pranjal Amrit, and I'm a web developer/designer.I am currently pursuing B.Tech(ECE) from Chandigarh Groups of Colleges.
+            </p>
+        </div>
+        <img src="img.png" alt="">
+    </section>
+    <section class="skills center" id="Skills">
+        <p class="skill_head">Skills</p>
+        <div class="skill_box center">
+            <div class="box">
+                <i class="fab fa-html5 fa-4x"></i>
+                <p>HTML</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-css3-alt fa-4x"></i>
+                <p>CSS</p>
+            </div>
+            <div class="box">
+                <i class="fab fa-js-square fa-4x"></i>
+                <p>Javascript</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-cuttlefish fa-4x"></i>
+                <p>c++</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects center" id="Projects">
+        <h1 class="project_heading">Projects</h1>
+        <div class="container center">
+
+            <div class="main_box center">
+                <div class="icon center">
+                    <i class="fas fa-hashtag"></i>
+
+                </div>
+                <div class="box">
+                    <h1> Messenger Website</h1>
+                    <p>
+                        Technology Used: React js, Firebase, Material Ui. it send and recive real time message. messages are stored in firebase database. user can send and recive message in real time. see project.
+
+
+                    </p>
+                    <div class="links">
+                        <a href=" https://cgcbytes.web.app/" target="_blank_">link<i class="fas fa-arrow-right"></i
+            ></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_box center">
+                <div class="icon center">
+                    <i class="fas fa-hashtag"></i>
+
+                </div>
+                <div class="box">
+                    <h1> Water Saving Device </h1>
+                    <p>
+                        It detects the level of water in ayn container(bucket,water tanker etc) and automatically stops the water supply
+                        <p>Components Used: Arduino,Water Level Depth Detection Sensor.</p>
+                        <p>Programming language:C++</p>
+                        <div class=""></div>
+
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <footer class="center">
+        <h1>Stay Connected</h1>
+        <div class="social_media_icons">
+            <a href="https://www.instagram.com/pranjal__9521/" target="_blank_"><img src="https://img.icons8.com/plasticine/50/000000/instagram-new--v2.png" /></a>
+            <a href="mailto:pranjalamrit2303@gmail.com" target="_blank_"> <img src="https://img.icons8.com/plasticine/50/000000/gmail.png" /></a>
+            <a href="https://github.com/pranjalamrit" target="_blank_"> <img src="https://img.icons8.com/fluent/48/000000/github.png" /></a>
+
+            <a href="https://www.linkedin.com/in/pranjal-amrit-230302 " target="_blank_"><img src="https://img.icons8.com/fluent/45/000000/linkedin.png" /></a>
+        </div>
+        <br>
+        <p>© Copyright Pranjal Amrit. All Rights Reserved</p>
+    </footer>
+
+
+    <div class="toggle center active" id="toggle">
+        <div class="box center">
+            <a href="#main" class="links center">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="box center">
+            <a href="#About" class="links center">
+                <i class="fas fa-address-card"></i>
+                <p>About</p>
+            </a>
+            <input type="checkbox" name="" id="btn" />
+            <a href="#Skills" class="links center">
+                <i class="fas fa-sliders-h"></i>
+                <p>Skills</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#Projects" class=" links center">
+                <i class="fas fa-tasks"></i>
+                <p>Projects</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const toggle = document.getElementById("toggle");
+        const btn = document.getElementById("btn");
+        const links = document.querySelectorAll(".links");
+
+        btn.addEventListener("click", (e) => {
+            toggle.classList.toggle("active");
+        });
+        links.forEach((e) => {
+            e.addEventListener("click", () => {
+                toggle.classList.toggle("active");
+            })
+        });
+    </script>
+</body>
+
+</html>
